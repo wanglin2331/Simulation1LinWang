@@ -1,0 +1,157 @@
+.App {
+	/* font-family: "Open Sans"; */
+}
+
+button {
+  cursor: pointer;
+}
+
+Link {
+  cursor: pointer;
+}
+
+nav {
+  height: 100px;
+  background-color: #AB2A19;
+  /* padding-left: 500px; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+nav h1 {
+ padding-right: 80px;
+ color: white;
+}
+
+.top {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  margin-right: 80px;
+  width: 50px;
+}
+
+.shelves{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shelfList {
+  width: 420px;
+  height: 60px;
+  background-color: #D34735;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 80px;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+.shelfList h1{  
+  color: white; 
+}
+
+.bins{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.binList {
+  width: 420px;
+  height: 60px;
+  background-color: #ED6B5A;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 80px;
+  margin-top: 20px;
+}
+
+.binList h1{  
+  color: white; 
+}
+
+
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.itemInfo span {
+  height: 60px;
+  width: 500px;
+  border: 1px solid #AB2A19;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  font-weight: bold;
+  padding-left:10px;
+  margin-bottom: 20px;
+}
+
+.grayButton {
+  height: 60px;
+  width: 200px;
+  background-color: #d8d8d8;
+  border-style: none;
+  margin: 20px;
+  font-size: 25px;
+}
+
+.saveButton {
+  height: 60px;
+  width: 200px;
+  background-color: #40F99B;
+  border-style: none;
+  margin: 20px;
+  font-size: 25px;
+}
+
+.itemInfo input {
+  height: 60px;
+  width: 500px;
+  border: 1px solid #AB2A19;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  font-weight: bold;
+  padding-left:10px;
+  margin-bottom: 20px;
+}
+
+.addButton {
+  height: 60px;
+  width: 500px;
+  background-color: #40F99B;
+  border-style: none;
+  margin: 20px;
+  font-size: 25px;
+}
