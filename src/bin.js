@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HashRouter, Route, Link, Switch} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 const itemApi="http://localhost:3001/api/item/"
 
@@ -74,31 +74,31 @@ export default class Bin extends Component{
         //                 else if(this.props.match.path[1]=='4'){return 'Shelf D'}
         function shelfnm(id)
                     {if (id=='1'){return 'Shelf A'}
-                        else if(id=='2'){return 'Shelf B'}
-                        else if(id=='3'){return 'Shelf C'}
-                        else if(id=='4'){return 'Shelf D'}
+                        else if(id==='2'){return 'Shelf B'}
+                        else if(id==='3'){return 'Shelf C'}
+                        else if(id==='4'){return 'Shelf D'}
                     };
         
         function binnm(id)
                         {if (id=='1'){return 'Bin 1'}
-                        else if(id=='2'){return 'Bin 2'}
-                        else if(id=='3'){return 'Bin 3'}
-                        else if(id=='4'){return 'Bin 4'}
-                        else if(id=='5'){return 'Bin 1'}
-                        else if(id=='6'){return 'Bin 2'}
-                        else if(id=='7'){return 'Bin 3'}
-                        else if(id=='8'){return 'Bin 4'}
-                        else if(id=='9'){return 'Bin 5'}
-                        else if(id=='10'){return 'Bin 1'}
-                        else if(id=='11'){return 'Bin 2'}
-                        else if(id=='12'){return 'Bin 3'}
-                        else if(id=='13'){return 'Bin 4'}
-                        else if(id=='14'){return 'Bin 5'}
-                        else if(id=='15'){return 'Bin 1'}
-                        else if(id=='16'){return 'Bin 2'}
-                        else if(id=='17'){return 'Bin 3'}
-                        else if(id=='18'){return 'Bin 4'}
-                        else if(id=='19'){return 'Bin 5'}
+                        else if(id==='2'){return 'Bin 2'}
+                        else if(id==='3'){return 'Bin 3'}
+                        else if(id==='4'){return 'Bin 4'}
+                        else if(id==='5'){return 'Bin 1'}
+                        else if(id==='6'){return 'Bin 2'}
+                        else if(id==='7'){return 'Bin 3'}
+                        else if(id==='8'){return 'Bin 4'}
+                        else if(id==='9'){return 'Bin 5'}
+                        else if(id==='10'){return 'Bin 1'}
+                        else if(id==='11'){return 'Bin 2'}
+                        else if(id==='12'){return 'Bin 3'}
+                        else if(id==='13'){return 'Bin 4'}
+                        else if(id==='14'){return 'Bin 5'}
+                        else if(id==='15'){return 'Bin 1'}
+                        else if(id==='16'){return 'Bin 2'}
+                        else if(id==='17'){return 'Bin 3'}
+                        else if(id==='18'){return 'Bin 4'}
+                        else if(id==='19'){return 'Bin 5'}
                     };
         
 

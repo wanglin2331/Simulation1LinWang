@@ -23,16 +23,25 @@ export default class Shelf extends Component{
         axios.get (itemsApi). then (
             response => {
                 this.setState({items: response.data});
+
+                const binsClone = this.state.bins;
+                for(var i=0; i<response.data.length; i++){
+                    for(var k=0; k<binsClone.length; k++) {
+                        if(response.data[i].binid==binsClone[k].binid){
+                            binsClone[k].itemnm= response.data[i].itemnm}
+                            this.setState({bins: binsClone});
+                        }
+                    }
+                })
             }
-        )
-      }
+        
+
+      
 
     render() {
         const binClone = Object.assign({}, this.state.bins[0]);
-        // console.log(111111,this.state.bins);
-        // console.log(2222,binClone.shelfnm);
-        // console.log(444444,this.state.bins);
-        // console.log(555555,this.state.items);
+         console.log(444444,this.state.bins);
+         console.log(555555,this.state.items);
         return (
            
             <div>
@@ -47,14 +56,27 @@ export default class Shelf extends Component{
                 <div className="bins">
                 {this.state.bins.map(bin => {
                 return (
-                    <div className="binList"> 
+                            <div>
+                                {bin.itemnm
+                                    ?(
+                                        <div className="binList"> 
 
-                         <Link to={"/"+this.props.match.params.shelfid+"/"+bin.binid}><h1>{bin.binnm}</h1></Link>
+                                            <Link to={"/"+this.props.match.params.shelfid+"/"+bin.binid}><h1>{bin.binnm}</h1></Link>
 
-                    </div>
-                    )})
+                                        </div>
+                                    )
+                                    :(  <div className="binListAdd">
+                                        <Link to={"/"+this.props.match.params.shelfid+"/"+bin.binid}>
+                                            <h1>+ Add inventory to bin</h1>
+                                        </Link>
+                                        </div>
+                                    )
+                                }
+                            </div>
+                        )})
                 }
                 </div>
+                
             </div>
         )
     }

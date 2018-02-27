@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import {HashRouter, Route, Link, Switch} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const shelfApi = 'http://localhost:3001/api/shelf';
 

@@ -89,6 +89,23 @@ a {
   color: white; 
 }
 
+.binListAdd {
+  width: 420px;
+  height: 60px;
+  background-color: #ED6B5A;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 80px;
+  margin-top: 20px;
+  background-color: #FFB8AF;
+}
+
+.binListAdd h1{  
+  color: white; 
+}
+
 
 
 .itemInfo {
@@ -155,3 +172,6 @@ a {
   margin: 20px;
   font-size: 25px;
 }
+
+
+
